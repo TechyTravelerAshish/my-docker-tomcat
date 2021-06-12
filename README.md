@@ -1,8 +1,9 @@
-# my-docker-tomcat
+# Read Me : my-docker-tomcat
 
-1. Working Version-1 (in Local Desktop)
+## 1. Working Version-1 (in Local Desktop)
 
-docker build --no-cache -t mywebapp ./ 
+docker build --no-cache -t mywebapp ./
+
 docker run -p 8080:8080 mywebapp
 docker tag mywebapp dockerplaygroup/mywebapp
 docker push dockerplaygroup/mywebapp
@@ -14,6 +15,7 @@ docker push dockerplaygroup/mywebapp
 # Usefull Commands
 
 docker image ls
+
 docker container ls
 
 # Tagging before pushing to Docker Hub Repository

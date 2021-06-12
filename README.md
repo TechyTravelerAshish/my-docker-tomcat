@@ -10,6 +10,7 @@ docker tag mywebapp dockerplaygroup/mywebapp
 
 docker push dockerplaygroup/mywebapp
 
+Copy war files using winscp, downloading directlt caused zip error while starting container
 
 ## Docker installation in EC2
 

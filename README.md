@@ -1,6 +1,6 @@
 # Read Me : my-docker-tomcat
 
-## 1. Working Version-1 (in Local Desktop)
+## Working Version-1 (in Local Desktop)
 
 docker build --no-cache -t mywebapp ./
 
@@ -12,6 +12,21 @@ docker push dockerplaygroup/mywebapp
 
 Copy war files using winscp, downloading directlt caused zip error while starting container
 
+
+## Alpine tomcat is the stable option use that only for now. (Final Image)
+
+docker image build --no-cache -t ecs-tomcat-webapp ./
+
+docker run -p 8080:8080 ecs-tomcat-webapp
+
+Tomcat URL  :- http://localhost:8080/
+
+Web App URL :- http://localhost:8080/ecs-tomcat-webapp/
+
+docker tag ecs-tomcat-webapp dockerplaygroup/ecs-tomcat-webapp
+
+docker push dockerplaygroup/ecs-tomcat-webapp
+
 ## Docker installation in EC2
 
 sudo yum update -y;
@@ -20,11 +35,6 @@ sudo service docker start;
 sudo usermod -a -G docker ec2-user;
 docker info;
 touch Dockerfile;
-
-
-
-
-
 
 ## Usefull Commands
 

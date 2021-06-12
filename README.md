@@ -12,13 +12,13 @@ docker push dockerplaygroup/mywebapp
 
 
 
-# Usefull Commands
+## Usefull Commands
 
 docker image ls
 
 docker container ls
 
-# Tagging before pushing to Docker Hub Repository
+## Tagging before pushing to Docker Hub Repository
 
 You need to include the namespace for Docker Hub to associate it with your account. The namespace is the same as your Docker Hub account name.
 You have to tag your image before pushing:
@@ -29,5 +29,5 @@ Now you should be able to push it.
 
 docker push YOUR_DOCKERHUB_NAME/firstimage
 
-# Reference Link
+## Reference Link
 https://stackoverflow.com/questions/41984399/denied-requested-access-to-the-resource-is-denied-docker

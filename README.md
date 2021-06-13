@@ -12,11 +12,10 @@ docker push dockerplaygroup/mywebapp
 
 docker ps
 
+NOTE :- Copy war files using winscp, downloading directlt caused zip error while starting container
+
 ### ---- Container Logs ----
 docker logs container-id
-
-Copy war files using winscp, downloading directlt caused zip error while starting container
-
 
 ## Alpine tomcat is the stable option use that only for now. (Final Image)
 

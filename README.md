@@ -10,7 +10,7 @@ docker tag mywebapp dockerplaygroup/mywebapp
 
 docker push dockerplaygroup/mywebapp
 ### ---- Container Logs ----
-docker logs <container-id>
+docker logs container-id
 
 Copy war files using winscp, downloading directlt caused zip error while starting container
 

@@ -9,6 +9,9 @@ docker run -p 8080:8080 mywebapp
 docker tag mywebapp dockerplaygroup/mywebapp
 
 docker push dockerplaygroup/mywebapp
+
+docker ps
+
 ### ---- Container Logs ----
 docker logs container-id
 
